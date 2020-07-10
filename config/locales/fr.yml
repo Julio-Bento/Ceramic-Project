@@ -140,6 +140,7 @@ fr:
         email: Courriel
         password: Mot de passe
         password_confirmation: Confirmation du mot de passe
+        log_in: Se Connecter
       spree/variant:
         cost_currency: Devise du prix
         cost_price: Prix coûtant
@@ -152,6 +153,7 @@ fr:
       spree/zone:
         description: Description
         name: Nom
+      spree/new_shippment:
     errors:
       models:
         spree/calculator/tiered_flat_rate:
@@ -978,8 +980,6 @@ fr:
     pre_tax_amount:
     pre_tax_refund_amount:
     pre_tax_total:
-    preferred_reimbursement_type:
-    preferred_reimbursement_type:
     presentation: Présentation
     previous: Précédent
     previous_state_missing: État précédent manquant
@@ -1381,3 +1381,36 @@ fr:
     zipcode: Code postal
     zone: Zone
     zones: Zones
+    naq: cp
+    cart_page:
+      empty_info: Panier vide
+    nav_bar:
+      show_search: rechercher
+      show_user_menu: menu utilisateur
+      my_account: Mon Compte
+      log_out: Déconnexion
+      log_in: Se connecter
+      sign_up: Inscription
+    homepage:
+      shop_now: Achetez Maintenant
+      read_more: plus d'informations
+  address_book:
+    save: sauvegarder
+    new_shipping_address: "Nouvelle Adresse de livraison"
+  required_fields: Champs Obligatoire
+  first_name: Prénom
+  last_name: Nom
+  street_address: Addresse
+  email: email
+  search: rechercher
+  company: Entreprise
+  street_address_2: Adresse complémentaire
+  city: Ville
+  country: pays
+  state: Etat
+  zip: Code Postal
+  phone: Téléphone
+  log_in_to_continue: Connectez-vous
+  dont_have_account: Vous n'avez pas de compte
+  sign_up: S'inscrire
+  log_in: Se connecter
