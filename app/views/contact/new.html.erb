@@ -1,0 +1,50 @@
+<div class="container">
+  <h1 class="text-center mb-5">Formulaire de contact</h1>
+
+  <% if @contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(good.errors.count, "erreurs") %> empêchent ce formulaire d'être envoyé :</h2>
+      <ul>
+        <% @contact.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <%= form_for :contact do |f| %>
+
+        <div class="form-group">
+          <%= f.text_field :first_name, placeholder: "PRENOM*" %>
+        </div>
+
+        <div class="form-group">
+          <%= f.text_field :last_name, placeholder: "NOM*" %>
+        </div>
+
+        <div class="form-group">
+          <%= f.text_field :email, placeholder: "EMAIL*" %>
+        </div>
+
+        <div class="form-group">
+          <%= f.text_field :phone_number, placeholder: "TELEPHONE" %>
+        </div>
+
+        <div class="form-group">
+          <%= f.check_box :agreement %>
+          <%= f.label "En cochant cette case, j'accepte que mes données soient utilisées pour me recontacter" %>
+        </div>
+
+        <p>Place recapatcha here...</p>
+
+        <div class="form-group">
+          <%= f.text_area :body, placeholder: "SAISISSEZ VOTRE MESSAGE..." %>
+        </div>
+
+    <% end %>
+    </div>
+  </div>
+
+</div>

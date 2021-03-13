@@ -1,21 +1,14 @@
 default:
   navigation:
-    - title: Women
+    - title: Chevillage
       subtitle: Categories
-      url: /t/women
+      url: /t/chevillage
       items:
-        - :title: Skirts
-          :url: /t/women/skirts
-        - :title: Dresses
-          :url: /t/women/dresses
-        - :title: Shirts and Blouses
-          :url: /t/women/shirts-and-blouses
-        - :title: Sweaters
-          :url: /t/women/sweaters
-        - :title: Tops and T-shirts
-          :url: /t/women/tops-and-t-shirts
-        - :title: Jackets and Coats
-          :url: /t/women/jackets-and-coats
+        - :title: Bois
+          :url: /t/chevillage/bois
+          items:
+            - :title: 'Tête fraisé'
+              :url: /t/chevillage/bois/tete-fraise
       promo_banners:
         - subtitle: New collection
           title: Summer 2019
@@ -31,6 +24,9 @@ default:
       items:
         - :title: Shirts
           :url: /t/men/shirts
+          :items:
+            - :title: Test
+              :url: /t/men/Test
         - :title: T-shirts
           :url: /t/men/t-shirts
         - :title: Sweaters
